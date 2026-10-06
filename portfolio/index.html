@@ -151,10 +151,6 @@
             <span>Active</span>
           </div>
         </div>
-
-        <button class="preview-tool-trigger js-open-photo-modal">
-          📷 Test Local Photo Preview Utility
-        </button>
       </div>
     </div>
   </section>
@@ -873,28 +869,6 @@
       </div>
     </div>
   </footer>
-
-  <!-- Profile Photo Live Preview Modal Utility (Section 20) -->
-  <div id="photo-modal" class="modal-overlay">
-    <div class="modal-card">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-        <h3 style="font-size: 1.125rem; font-weight: 800;">Profile Photo Live Preview</h3>
-        <button id="close-photo-modal" class="icon-btn" aria-label="Close modal">✕</button>
-      </div>
-      <p style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 1rem;">
-        Select an image from your computer to preview how it looks in the executive hero frame. Operates locally in browser memory; no files are uploaded to any server.
-      </p>
-
-      <input type="file" id="photo-file-input" accept="image/*" style="margin-bottom: 1rem; width: 100%; font-size: 0.75rem;" />
-
-      <img id="photo-modal-preview" src="" alt="Selected Preview" style="display: none; width: 100%; height: 12rem; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 1rem; border: 1px solid var(--border-color);" />
-
-      <div style="display: flex; justify-content: flex-end; gap: 0.5rem;">
-        <button id="reset-photo-preview" class="btn-secondary" style="font-size: 0.75rem;">Reset Default</button>
-        <button id="apply-photo-preview" class="btn-primary" style="font-size: 0.75rem;" disabled>Apply Preview</button>
-      </div>
-    </div>
-  </div>
 
   <script src="js/script.js?v=2.0"></script>
 </body>
