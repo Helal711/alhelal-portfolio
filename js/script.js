@@ -13,7 +13,7 @@ const SITE_CONFIG = {
   profileImage: "assets/profile.jpg", // Replace this file with your real .jpg photo
   cvFile: "assets/cv.pdf",            // Replace this file to update CV document
   email: "alhelal711@gmail.com",
-  phone: "+880 171-845557",
+  phone: "+880 1717-845557",
   location: "Dhaka, Bangladesh",
   showPrivateInformation: false      // Keep false to protect personal identifiers
 };
