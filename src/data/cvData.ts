@@ -39,7 +39,7 @@ export const CAREER_JOURNEY: ExperienceItem[] = [
     id: "kido-bd",
     period: "2023 – Present",
     company: "KiDO Dhaka Co. Limited",
-    role: "Senior Officer – Administration",
+    role: "Senior Officer – Administration & Procurement",
     summary: "Leading holistic plant administration, physical facility operations, contractor renovation oversight, asset procurement, and executive liaison in a premier manufacturing environment.",
     categories: [
       {
