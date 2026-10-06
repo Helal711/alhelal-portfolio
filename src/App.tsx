@@ -3,7 +3,6 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { HeroStats } from './components/HeroStats';
 import { About } from './components/About';
-import { BrandStatement } from './components/BrandStatement';
 import { Experience } from './components/Experience';
 import { Expertise } from './components/Expertise';
 import { Skills } from './components/Skills';
@@ -65,7 +64,6 @@ export default function App() {
         />
         <HeroStats />
         <About />
-        <BrandStatement />
         <Experience />
         <Expertise />
         <Skills />
