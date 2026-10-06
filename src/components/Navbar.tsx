@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { SITE_CONFIG } from '../config';
-import { Download, Moon, Sun, Menu, X, Printer, Shield } from 'lucide-react';
+import { Download, Moon, Sun, Menu, X, Printer, Shield, ShieldCheck } from 'lucide-react';
 
 interface NavbarProps {
   darkMode: boolean;
@@ -69,8 +69,19 @@ export const Navbar: React.FC<NavbarProps> = ({
           className="group flex items-center gap-3 text-slate-900 dark:text-white transition-opacity hover:opacity-90"
           aria-label="Md. Al Helal Sarkar Home"
         >
-          <div className="w-9 h-9 rounded-lg bg-slate-900 dark:bg-emerald-500 text-white dark:text-slate-950 flex items-center justify-center font-bold text-sm tracking-wider shadow-sm transition-transform group-hover:scale-105">
-            AH
+          <div
+            className="rounded-full overflow-hidden border-2 border-emerald-500 shadow-sm transition-all duration-300 group-hover:scale-105 group-hover:border-emerald-400 shrink-0 bg-slate-900"
+            style={{ width: '2.25rem', height: '2.25rem', minWidth: '2.25rem', minHeight: '2.25rem', maxWidth: '2.25rem', maxHeight: '2.25rem' }}
+          >
+            <img
+              src={SITE_CONFIG.profileImage}
+              alt="Md. Al Helal Sarkar"
+              width={36}
+              height={36}
+              referrerPolicy="no-referrer"
+              style={{ width: '100%', height: '100%', maxWidth: '100%', maxHeight: '100%', objectFit: 'cover', display: 'block' }}
+              className="rounded-full"
+            />
           </div>
           <div className="flex flex-col">
             <span className="font-bold text-base sm:text-lg tracking-tight leading-none text-slate-900 dark:text-white">
