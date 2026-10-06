@@ -15,10 +15,10 @@ export const SITE_CONFIG: SiteConfig = {
   name: "Md. Al Helal Sarkar",
   title: "Administration & Operations Professional",
   eyebrow: "ADMINISTRATION • OPERATIONS • COMPLIANCE",
-  profileImage: "assets/profile.svg",
+  profileImage: "assets/profile.jpg",
   cvFile: "assets/cv.pdf",
   email: "alhelal711@gmail.com",
-  phone: "+880 171-845557", // Direct contact number
+  phone: "+880 1717-845557", // Direct contact number
   location: "Dhaka, Bangladesh",
   showPrivateInformation: false, // Protected by default
 };
