@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <!-- Vibrant Cyan / Turquoise Background from User Photo -->
+    <linearGradient id="studioBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E5FF" />
+      <stop offset="50%" stop-color="#00C4DF" />
+      <stop offset="100%" stop-color="#00A8C6" />
+    </linearGradient>
+
+    <!-- Skin Tone Gradients -->
+    <linearGradient id="skinBase" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D69F78" />
+      <stop offset="60%" stop-color="#C58E67" />
+      <stop offset="100%" stop-color="#B27A54" />
+    </linearGradient>
+
+    <linearGradient id="skinShadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#A56E49" />
+      <stop offset="100%" stop-color="#8E5B37" />
+    </linearGradient>
+
+    <!-- Hair Gradient -->
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D282A" />
+      <stop offset="40%" stop-color="#1B1719" />
+      <stop offset="100%" stop-color="#0F0C0E" />
+    </linearGradient>
+
+    <!-- Shirt Gradients (Light Blue Button-down) -->
+    <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#BFDBFE" />
+      <stop offset="40%" stop-color="#93C5FD" />
+      <stop offset="100%" stop-color="#60A5FA" />
+    </linearGradient>
+
+    <linearGradient id="collarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DBEAFE" />
+      <stop offset="100%" stop-color="#BFDBFE" />
+    </linearGradient>
+
+    <!-- Subtle Vignette -->
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="60%" stop-color="rgba(0,0,0,0)" />
+      <stop offset="100%" stop-color="rgba(0,140,165,0.25)" />
+    </radialGradient>
+  </defs>
+
+  <!-- 1. Studio Cyan Background -->
+  <rect width="800" height="800" fill="url(#studioBg)" />
+  <rect width="800" height="800" fill="url(#vignette)" />
+
+  <!-- Soft Ambient Light Behind Head -->
+  <circle cx="400" cy="400" r="280" fill="#26ECFF" opacity="0.4" filter="blur(40px)" />
+
+  <!-- 2. Shoulders & Torso (Light Sky Blue Shirt) -->
+  <g id="torso">
+    <!-- Shoulder Base -->
+    <path d="M 120 800 C 120 710, 220 660, 310 650 L 490 650 C 580 660, 680 710, 680 800 Z" fill="url(#shirtGrad)" />
+    <!-- White Inner Collar Yoke Highlights -->
+    <path d="M 140 800 C 150 740, 220 700, 280 685 L 230 800 Z" fill="#EFF6FF" opacity="0.85" />
+    <path d="M 660 800 C 650 740, 580 700, 520 685 L 570 800 Z" fill="#EFF6FF" opacity="0.85" />
+  </g>
+
+  <!-- 3. Neck & Throat -->
+  <g id="neck">
+    <!-- Neck Shading -->
+    <path d="M 330 520 L 330 660 L 470 660 L 470 520 Z" fill="url(#skinShadow)" />
+    <!-- Neck Center Light -->
+    <path d="M 345 530 C 345 610, 360 655, 400 660 C 440 655, 455 610, 455 530 Z" fill="url(#skinBase)" />
+  </g>
+
+  <!-- 4. Shirt Collar & Button -->
+  <g id="shirtCollar">
+    <!-- Left Collar Wing -->
+    <polygon points="310,645 385,730 400,670 345,635" fill="url(#collarGrad)" stroke="#93C5FD" stroke-width="2" />
+    <!-- Right Collar Wing -->
+    <polygon points="490,645 415,730 400,670 455,635" fill="url(#collarGrad)" stroke="#93C5FD" stroke-width="2" />
+    <!-- Center Placket V-Opening -->
+    <polygon points="385,720 400,775 415,720 400,695" fill="#3B82F6" opacity="0.3" />
+    <!-- Collar Button -->
+    <circle cx="400" cy="740" r="6" fill="#1E293B" stroke="#64748B" stroke-width="1.5" />
+    <circle cx="400" cy="740" r="2.5" fill="#94A3B8" />
+  </g>
+
+  <!-- 5. Head & Ears -->
+  <g id="head">
+    <!-- Left Ear -->
+    <ellipse cx="270" cy="460" rx="28" ry="48" fill="url(#skinBase)" />
+    <ellipse cx="274" cy="460" rx="14" ry="26" fill="url(#skinShadow)" />
+
+    <!-- Right Ear -->
+    <ellipse cx="530" cy="460" rx="28" ry="48" fill="url(#skinBase)" />
+    <ellipse cx="526" cy="460" rx="14" ry="26" fill="url(#skinShadow)" />
+
+    <!-- Head Shape (Md. Al Helal Sarkar) -->
+    <path d="M 275 410 
+             C 275 280, 330 200, 400 200 
+             C 470 200, 525 280, 525 410 
+             C 525 490, 505 560, 455 595 
+             C 425 615, 375 615, 345 595 
+             C 295 560, 275 490, 275 410 Z" 
+          fill="url(#skinBase)" />
+
+    <!-- Cheek & Jaw Soft Highlights -->
+    <ellipse cx="340" cy="470" rx="40" ry="30" fill="#E2AE8A" opacity="0.4" />
+    <ellipse cx="460" cy="470" rx="40" ry="30" fill="#E2AE8A" opacity="0.4" />
+    <ellipse cx="400" cy="580" rx="35" ry="18" fill="#DDB08E" opacity="0.6" />
+  </g>
+
+  <!-- 6. Facial Features -->
+  <g id="features">
+    <!-- Eyebrows (Defined natural South Asian masculine brows) -->
+    <path d="M 315 365 C 335 350, 365 352, 385 362 C 370 357, 340 355, 318 368 Z" fill="url(#hairGrad)" />
+    <path d="M 485 365 C 465 350, 435 352, 415 362 C 430 357, 460 355, 482 368 Z" fill="url(#hairGrad)" />
+
+    <!-- Left Eye -->
+    <path d="M 325 398 C 345 385, 370 388, 385 402 C 368 412, 340 412, 325 398 Z" fill="#FFFFFF" />
+    <circle cx="355" cy="399" r="14" fill="#241B16" />
+    <circle cx="355" cy="399" r="8" fill="#0F0B09" />
+    <circle cx="351" cy="396" r="3" fill="#FFFFFF" />
+    <path d="M 322 396 C 345 382, 372 385, 388 400" stroke="#1A1412" stroke-width="3" fill="none" stroke-linecap="round" />
+
+    <!-- Right Eye -->
+    <path d="M 475 398 C 455 385, 430 388, 415 402 C 432 412, 460 412, 475 398 Z" fill="#FFFFFF" />
+    <circle cx="445" cy="399" r="14" fill="#241B16" />
+    <circle cx="445" cy="399" r="8" fill="#0F0B09" />
+    <circle cx="441" cy="396" r="3" fill="#FFFFFF" />
+    <path d="M 478 396 C 455 382, 428 385, 412 400" stroke="#1A1412" stroke-width="3" fill="none" stroke-linecap="round" />
+
+    <!-- Nose Bridge & Tip -->
+    <path d="M 395 385 C 395 425, 382 465, 375 485 C 388 493, 412 493, 425 485 C 418 465, 405 425, 405 385 Z" fill="#C58E67" opacity="0.4" />
+    <ellipse cx="400" cy="480" rx="16" ry="10" fill="#D7A17A" />
+    <ellipse cx="380" cy="485" rx="8" ry="6" fill="#A8724E" />
+    <ellipse cx="420" cy="485" rx="8" ry="6" fill="#A8724E" />
+    <!-- Nostrils -->
+    <ellipse cx="387" cy="488" rx="4" ry="2.5" fill="#3D2416" />
+    <ellipse cx="413" cy="488" rx="4" ry="2.5" fill="#3D2416" />
+
+    <!-- Philtrum -->
+    <path d="M 395 495 L 396 520 M 405 495 L 404 520" stroke="#B87E56" stroke-width="1.5" stroke-linecap="round" opacity="0.6" />
+
+    <!-- Mouth & Lips (Gentle pleasant smile) -->
+    <path d="M 360 540 C 380 532, 420 532, 440 540 C 420 550, 380 550, 360 540 Z" fill="#B36F71" />
+    <path d="M 362 540 C 380 538, 420 538, 438 540" stroke="#7A3F41" stroke-width="2.5" fill="none" stroke-linecap="round" />
+    <path d="M 370 543 C 385 558, 415 558, 430 543 Z" fill="#C48284" />
+    <!-- Chin crease -->
+    <path d="M 385 580 C 395 585, 405 585, 415 580" stroke="#A8724E" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7" />
+  </g>
+
+  <!-- 7. Hair (Side-parted natural dark fringe sweep matching user photo) -->
+  <g id="hair">
+    <!-- Main Hair Mass -->
+    <path d="M 270 410 
+             C 260 320, 290 200, 390 190 
+             C 480 180, 530 250, 530 360 
+             C 530 400, 520 440, 520 450
+             C 510 440, 505 380, 500 350
+             C 480 290, 440 270, 380 270
+             C 320 270, 285 320, 275 390 Z" 
+          fill="url(#hairGrad)" />
+
+    <!-- Side-Parted Fringe Swirl over Forehead -->
+    <path d="M 320 260 
+             C 350 250, 430 245, 475 285 
+             C 495 305, 505 340, 485 365 
+             C 460 350, 430 335, 390 330 
+             C 350 325, 320 340, 305 360 
+             C 300 310, 305 280, 320 260 Z" 
+          fill="url(#hairGrad)" />
+
+    <!-- Individual Hair Texture Accents -->
+    <path d="M 330 270 C 360 255, 420 255, 460 290" stroke="#453E42" stroke-width="3" fill="none" opacity="0.6" />
+    <path d="M 345 285 C 375 275, 425 275, 455 305" stroke="#453E42" stroke-width="2.5" fill="none" opacity="0.5" />
+    <path d="M 360 300 C 385 295, 420 295, 445 320" stroke="#3D373B" stroke-width="2" fill="none" opacity="0.4" />
+  </g>
+
+  <!-- Subtle Executive Frame Border Highlight -->
+  <rect x="10" y="10" width="780" height="780" rx="36" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="4" />
+</svg>
