@@ -10,7 +10,7 @@ const SITE_CONFIG = {
   name: "Md. Al Helal Sarkar",
   title: "Administration & Operations Professional",
   eyebrow: "ADMINISTRATION • OPERATIONS • COMPLIANCE",
-  profileImage: "assets/profile.svg", // Replace this file to update profile image
+  profileImage: "assets/profile.jpg", // Replace this file with your real .jpg photo
   cvFile: "assets/cv.pdf",            // Replace this file to update CV document
   email: "alhelal711@gmail.com",
   phone: "+880 171-845557",
@@ -43,14 +43,20 @@ document.addEventListener('DOMContentLoaded', () => {
  * Apply Site Configuration to Elements
  */
 function applyConfiguration() {
-  // Bind Profile Image
+  // Bind Profile Image with auto-detection for JPG, PNG, or ProfilePhoto HD.png
   const profileImgs = document.querySelectorAll('.js-profile-img');
   profileImgs.forEach(img => {
     img.src = SITE_CONFIG.profileImage;
     img.onerror = () => {
-      img.style.display = 'none';
-      const fallback = document.querySelector('.js-portrait-fallback');
-      if (fallback) fallback.style.display = 'flex';
+      if (img.src.endsWith('profile.jpg')) {
+        img.src = 'assets/ProfilePhoto HD.png';
+      } else if (img.src.includes('ProfilePhoto')) {
+        img.src = 'assets/profile.png';
+      } else {
+        img.style.display = 'none';
+        const fallback = document.querySelector('.js-portrait-fallback');
+        if (fallback) fallback.style.display = 'flex';
+      }
     };
   });
 
