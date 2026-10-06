@@ -7,7 +7,8 @@ import {
   Github,
   PhoneCall,
   Printer,
-  ArrowUp
+  ArrowUp,
+  ShieldCheck
 } from 'lucide-react';
 
 interface FooterProps {
@@ -36,8 +37,19 @@ export const Footer: React.FC<FooterProps> = ({ onPrint }) => {
           {/* Brand & Overview */}
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-emerald-500 text-slate-950 flex items-center justify-center font-extrabold text-base">
-                AH
+              <div
+                className="rounded-full overflow-hidden border-2 border-emerald-500 shadow-sm shrink-0 bg-slate-850"
+                style={{ width: '2.5rem', height: '2.5rem', minWidth: '2.5rem', minHeight: '2.5rem', maxWidth: '2.5rem', maxHeight: '2.5rem' }}
+              >
+                <img
+                  src={SITE_CONFIG.profileImage}
+                  alt={SITE_CONFIG.name}
+                  width={40}
+                  height={40}
+                  referrerPolicy="no-referrer"
+                  style={{ width: '100%', height: '100%', maxWidth: '100%', maxHeight: '100%', objectFit: 'cover', display: 'block' }}
+                  className="rounded-full"
+                />
               </div>
               <div>
                 <h3 className="text-lg font-bold text-white tracking-tight leading-none">
