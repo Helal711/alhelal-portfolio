@@ -1,33 +1,903 @@
-<!doctype html>
-<html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Md. Al Helal Sarkar | Administration & Operations Professional</title>
-    <meta name="description" content="Executive portfolio of Md. Al Helal Sarkar. Corporate operations specialist with 9+ years of experience in Administration, Facility Management, Compliance, Procurement, Asset Management, and IT/ERP." />
-    <meta name="author" content="Md. Al Helal Sarkar" />
-    <meta name="keywords" content="Md. Al Helal Sarkar, Administration, Operations, Facility Management, Compliance, Procurement, Asset Management, Office Management, ERP, Bangladesh" />
-    
-    <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Md. Al Helal Sarkar | Administration & Operations Professional" />
-    <meta property="og:description" content="Corporate operations specialist with experience in Administration, Facility Management, Compliance, Local Procurement, Asset Management, and IT/ERP." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="/assets/profile.jpg" />
-    
-    <!-- Twitter / X Cards -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Md. Al Helal Sarkar | Administration & Operations Professional" />
-    <meta name="twitter:description" content="Corporate operations specialist with experience in Administration, Facility Management, Compliance, Local Procurement, Asset Management, and IT/ERP." />
-    <meta name="twitter:image" content="/assets/profile.jpg" />
-    
-    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  </head>
-  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-emerald-500 selection:text-white dark:bg-slate-950 dark:text-slate-100 min-h-screen">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md. Al Helal Sarkar | Administration & Operations Professional</title>
+  <meta name="description" content="Corporate operations specialist with 9+ years of experience in Administration, Facility Management, Compliance, Local Procurement, Asset Management, and IT/ERP." />
+  <meta name="author" content="Md. Al Helal Sarkar" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Md. Al Helal Sarkar | Administration & Operations Professional" />
+  <meta property="og:description" content="Executive portfolio of Md. Al Helal Sarkar. Corporate operations specialist with 9+ years of experience." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/profile.jpg" />
+  
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
 
+  <!-- Sticky Executive Navigation (3-Zone Contract) -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <!-- Zone 1: Wordmark -->
+      <a href="#home" class="brand-link">
+        <div class="brand-badge">AH</div>
+        <div class="brand-meta">
+          <span class="brand-title">MD. AL HELAL SARKAR</span>
+          <span class="brand-sub">Administration &amp; Operations</span>
+        </div>
+      </a>
+
+      <!-- Zone 2: Navigation Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#expertise" class="nav-link">Expertise</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#training" class="nav-link">Training</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Zone 3: Utilities & CTA -->
+      <div class="nav-actions">
+        <button id="theme-toggle-btn" class="icon-btn" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">
+          🌓
+        </button>
+        <button class="icon-btn js-print-portfolio" title="Print Executive CV" aria-label="Print CV">
+          🖨️
+        </button>
+        <a href="assets/cv.pdf" class="btn-primary js-cv-download">
+          Download CV
+        </a>
+        <button id="hamburger-btn" class="icon-btn hamburger-btn" aria-label="Toggle Mobile Navigation">
+          ☰
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-drawer" class="mobile-drawer">
+      <ul class="mobile-nav-list">
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+        <li><a href="#expertise" class="mobile-nav-link">Expertise</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#education" class="mobile-nav-link">Education</a></li>
+        <li><a href="#training" class="mobile-nav-link">Training</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container hero-grid">
+      <!-- Left Hero Text -->
+      <div>
+        <div class="hero-eyebrow">
+          <span class="hero-dot"></span>
+          <span>ADMINISTRATION • OPERATIONS • COMPLIANCE</span>
+        </div>
+        <h1 class="hero-title">Md. Al Helal Sarkar</h1>
+        <h2 class="hero-subtitle">Administration &amp; Operations Professional</h2>
+        <p class="hero-desc">
+          Seasoned corporate operations specialist with <strong>9+ years of documented track record</strong> managing high-uptime facilities, statutory &amp; social compliance audits, local procurement cycles, fixed-asset lifecycles, and enterprise ERP data administration across premier industrial organizations.
+        </p>
+
+        <!-- Unboxed Metadata Line -->
+        <div class="unboxed-meta">
+          <span>Facility Management</span>
+          <span class="sep">·</span>
+          <span>Social &amp; Fire Compliance</span>
+          <span class="sep">·</span>
+          <span>Local Procurement</span>
+          <span class="sep">·</span>
+          <span>Asset Registry</span>
+          <span class="sep">·</span>
+          <span>Oracle ERP</span>
+          <span class="sep">·</span>
+          <span>Graphic Design</span>
+        </div>
+
+        <!-- 3 CTA Buttons -->
+        <div class="hero-ctas">
+          <a href="#experience" class="btn-primary">Explore Experience →</a>
+          <a href="assets/cv.pdf" class="btn-secondary js-cv-download">Download CV</a>
+          <a href="#contact" class="btn-ghost">Contact Me</a>
+        </div>
+
+        <div class="hero-trust">
+          <span>🛡️ Verified CV Records</span>
+          <span class="sep">|</span>
+          <span>✓ Immediate Corporate Availability</span>
+        </div>
+      </div>
+
+      <!-- Right Hero Profile Image Frame -->
+      <div class="hero-portrait-wrapper">
+        <div class="portrait-frame">
+          <img
+            src="assets/profile.svg"
+            alt="Md. Al Helal Sarkar"
+            class="portrait-img js-profile-img"
+          />
+          <div class="portrait-fallback js-portrait-fallback" style="display: none;">
+            <div class="fallback-monogram">AH</div>
+            <strong style="font-size: 1.125rem;">Md. Al Helal Sarkar</strong>
+            <span style="font-size: 0.75rem; color: #34d399; margin-top: 0.25rem;">Administration &amp; Operations</span>
+          </div>
+          <div class="active-badge">
+            <span class="active-pulse"></span>
+            <span>Active</span>
+          </div>
+        </div>
+
+        <button class="preview-tool-trigger js-open-photo-modal">
+          📷 Test Local Photo Preview Utility
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero Statistics -->
+  <div class="container">
+    <div class="hero-stats-card">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-val tabular-nums">9.4</span>
+          <span class="stat-label">Years Experience</span>
+          <span class="stat-sub">Official CV verified track record</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-val tabular-nums">04</span>
+          <span class="stat-label">Major Organizations</span>
+          <span class="stat-sub">Multi-sector corporate exposure</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-val">BSc</span>
+          <span class="stat-label">Computer Science Eng.</span>
+          <span class="stat-sub">Pundra Univ. of Science &amp; Tech</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-val tabular-nums">10+</span>
+          <span class="stat-label">Professional Trainings</span>
+          <span class="stat-sub">Certified in safety &amp; compliance</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Executive About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-kicker">Executive Overview</div>
+        <h2 class="section-title">Professional Profile</h2>
+        <p class="section-lead">A verified record of corporate administrative governance, cross-functional facility supervision, statutory compliance, and digital systems management.</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Left Column: Narrative -->
+        <div class="about-narrative">
+          <p>
+            Corporate operations professional with over 9 years of hands-on experience driving administrative excellence, statutory compliance, facility maintenance, and strategic local procurement across high-demand industrial and corporate environments.
+          </p>
+          <p>
+            Proven expertise supervising large-scale manufacturing facilities, coordinating civil renovation projects, managing physical asset registers, and enforcing rigorous Fire Safety and Occupational Health standards.
+          </p>
+          <p>
+            Combines grounded corporate operational leadership with strong technical acumen in Computer Science Engineering (BSc), Oracle ERP systems, data administration, and professional graphic design.
+          </p>
+        </div>
+
+        <!-- Right Column: 8 Professional Focus Cards -->
+        <div>
+          <h3 style="font-size: 1.125rem; font-weight: 800; margin-bottom: 1rem;">Professional Focus (8 Pillars)</h3>
+          <div class="focus-grid">
+            <div class="focus-card">
+              <div class="focus-icon">🏛️</div>
+              <h4 class="focus-title">Administration</h4>
+              <p class="focus-desc">Executive liaison, workflow governance &amp; office systems</p>
+            </div>
+            <div class="focus-card">
+              <div class="focus-icon">🔧</div>
+              <h4 class="focus-title">Facility Operations</h4>
+              <p class="focus-desc">Plant upkeep, utilities monitoring &amp; technical supervision</p>
+            </div>
+            <div class="focus-card">
+              <div class="focus-icon">🛡️</div>
+              <h4 class="focus-title">Compliance</h4>
+              <p class="focus-desc">Audit readiness, labor codes &amp; fire safety protocols</p>
+            </div>
+            <div class="focus-card">
+              <div class="focus-icon">🛍️</div>
+              <h4 class="focus-title">Procurement</h4>
+              <p class="focus-desc">Vendor negotiation, RFQ evaluation &amp; purchase management</p>
+            </div>
+            <div class="focus-card">
+              <div class="focus-icon">📦</div>
+              <h4 class="focus-title">Asset Management</h4>
+              <p class="focus-desc">Fixed asset tracking, lifecycle maintenance &amp; physical audits</p>
+            </div>
+            <div class="focus-card">
+              <div class="focus-icon">🎨</div>
+              <h4 class="focus-title">Creative Design</h4>
+              <p class="focus-desc">Branding collateral, visual assets &amp; executive presentations</p>
+            </div>
+            <div class="focus-card">
+              <div class="focus-icon">💻</div>
+              <h4 class="focus-title">IT &amp; ERP</h4>
+              <p class="focus-desc">Oracle ERP operations, data integrity &amp; workflow digitization</p>
+            </div>
+            <div class="focus-card">
+              <div class="focus-icon">📑</div>
+              <h4 class="focus-title">Reporting</h4>
+              <p class="focus-desc">Audit documentation, MIS reports &amp; executive briefs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full-Width Brand Statement Ribbon -->
+  <section class="brand-ribbon">
+    <div class="container">
+      <div class="ribbon-kicker">Executive Philosophy</div>
+      <h2 class="ribbon-title">Administration. Operations. Compliance. Creativity.</h2>
+      <p class="ribbon-quote">
+        &ldquo;Bridging structured physical facility governance, zero-compromise statutory compliance, and rigorous asset tracking with modern digital ERP workflows and creative operational clarity.&rdquo;
+      </p>
+    </div>
+  </section>
+
+  <!-- Career Journey Timeline -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3.5rem;">
+        <div class="section-head" style="margin-bottom: 0;">
+          <div class="section-kicker">Employment History</div>
+          <h2 class="section-title">Career Journey</h2>
+          <p class="section-lead">Chronological professional trajectory across leading manufacturing, compliance, and industrial organizations.</p>
+        </div>
+        <div>
+          <button id="btn-expand-all" class="btn-secondary" style="font-size: 0.75rem; padding: 0.375rem 0.75rem;">Expand All</button>
+          <button id="btn-collapse-all" class="btn-secondary" style="font-size: 0.75rem; padding: 0.375rem 0.75rem;">Collapse All</button>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <!-- Item 1: KiDO Dhaka Co. Limited -->
+        <div class="timeline-item current">
+          <div class="timeline-node"></div>
+          <div class="timeline-period-badge">2023 – Present</div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Senior Officer – Administration</h3>
+                <span class="company-name">KiDO Dhaka Co. Limited</span>
+              </div>
+              <button class="btn-toggle-details js-toggle-experience" data-target="kido-details">
+                Hide Details
+              </button>
+            </div>
+            <p class="role-summary">
+              Leading holistic plant administration, physical facility operations, contractor renovation oversight, asset procurement, and executive liaison in a premier manufacturing environment.
+            </p>
+
+            <div id="kido-details" class="role-details open">
+              <div class="category-block">
+                <div class="cat-name">FACILITY &amp; TECHNICAL MAINTENANCE</div>
+                <ul class="bullet-list">
+                  <li>Supervising daily operations, preventive maintenance schedules, and emergency repairs for extensive facility infrastructure.</li>
+                  <li>Monitoring electrical, water, HVAC, and generator utility systems to ensure continuous industrial uptime.</li>
+                  <li>Managing third-party engineering contractors, service-level agreements (SLAs), and routine technical inspections.</li>
+                </ul>
+              </div>
+
+              <div class="category-block">
+                <div class="cat-name">CONSTRUCTION &amp; RENOVATION</div>
+                <ul class="bullet-list">
+                  <li>Directing civil renovation, architectural space planning, and structural modification projects within administrative and production zones.</li>
+                  <li>Coordinating on-site contractors, material quality verification, schedule adherence, and structural safety guidelines.</li>
+                  <li>Enforcing stringent environmental and physical safety measures during active renovation work.</li>
+                </ul>
+              </div>
+
+              <div class="category-block">
+                <div class="cat-name">ASSET MANAGEMENT &amp; PROCUREMENT</div>
+                <ul class="bullet-list">
+                  <li>Supervising the comprehensive corporate fixed-asset register, asset tagging, and physical cycle counts.</li>
+                  <li>Directing local procurement cycles: vendor identification, quotation assessment, price negotiation, and purchase order processing.</li>
+                  <li>Managing material requisition workflows, store transfers, and scrap/asset decommissioning procedures.</li>
+                </ul>
+              </div>
+
+              <div class="category-block">
+                <div class="cat-name">REPORTING &amp; DOCUMENTATION</div>
+                <ul class="bullet-list">
+                  <li>Compiling monthly operational cost reports, maintenance expenditure tracking, and administrative budget variances.</li>
+                  <li>Maintaining detailed equipment servicing logs, statutory inspection dossiers, and compliance verification papers.</li>
+                  <li>Drafting executive briefing notes and standard operating procedures (SOPs) for administrative departments.</li>
+                </ul>
+              </div>
+
+              <div class="category-block">
+                <div class="cat-name">EXECUTIVE COORDINATION</div>
+                <ul class="bullet-list">
+                  <li>Liaising smoothly with plant management, department heads, and government regulatory bodies.</li>
+                  <li>Managing company transport, cafeteria services, housekeeping standards, and security protocol execution.</li>
+                  <li>Organizing high-level management meetings, corporate VIP visits, and inter-departmental operational briefings.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: Ha-Meem Denim Ltd. -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-period-badge">2020 – 2023</div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Assistant Officer – Compliance</h3>
+                <span class="company-name">Ha-Meem Denim Ltd.</span>
+              </div>
+              <button class="btn-toggle-details js-toggle-experience" data-target="hameem-details">
+                View Details
+              </button>
+            </div>
+            <p class="role-summary">
+              Ensured total compliance with national labor laws, international buyer codes of conduct, fire safety systems, and occupational health regulations in a world-class textile manufacturing enterprise.
+            </p>
+
+            <div id="hameem-details" class="role-details">
+              <ul class="bullet-list">
+                <li>Audited factory floor operations against social compliance codes, buyer requirements, and statutory labor laws.</li>
+                <li>Conducted fire safety drills, evacuation simulations, and routine checks on fire detection and suppression apparatus.</li>
+                <li>Prepared documentation dossiers for third-party buyer social audits, environmental assessments, and compliance renewals.</li>
+                <li>Facilitated safety committee meetings, worker grievance procedures, and emergency response team (ERT) readiness.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Zaber Spinning Mills -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-period-badge">2018 – 2020</div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Data Entry Operator &amp; Office Management</h3>
+                <span class="company-name">Zaber Spinning Mills</span>
+              </div>
+              <button class="btn-toggle-details js-toggle-experience" data-target="zaber-details">
+                View Details
+              </button>
+            </div>
+            <p class="role-summary">
+              Maintained accurate manufacturing ledgers, ERP data inputs, production statistics, and day-to-day clerical office operations.
+            </p>
+
+            <div id="zaber-details" class="role-details">
+              <ul class="bullet-list">
+                <li>Accurately entered and validated daily production logs, raw material reconciliations, and dispatch data into enterprise databases.</li>
+                <li>Organized physical and digital filing repositories for departmental correspondence, invoices, and supplier receipts.</li>
+                <li>Assisted administrative executives with shift scheduling, staff attendance tracking, and administrative reports.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: Advance Design & Technology -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-period-badge">2017 – 2018</div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Data Entry Operator</h3>
+                <span class="company-name">Advance Design &amp; Technology</span>
+              </div>
+              <button class="btn-toggle-details js-toggle-experience" data-target="advance-details">
+                View Details
+              </button>
+            </div>
+            <p class="role-summary">
+              Executed computer data processing, documentation scanning, record indexing, and administrative support tasks.
+            </p>
+
+            <div id="advance-details" class="role-details">
+              <ul class="bullet-list">
+                <li>Transcribed technical data sheets, project blueprints, and commercial documents into standardized digital archives.</li>
+                <li>Verified entry accuracy to maintain error-free database records and client project files.</li>
+                <li>Supported front-office administrative coordination, inventory logs, and equipment supplies.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Expertise -->
+  <section id="expertise" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-kicker">Functional Competencies</div>
+        <h2 class="section-title">Core Expertise</h2>
+        <p class="section-lead">Disciplined operational execution across institutional administration, safety compliance, facility engineering, and digital systems.</p>
+      </div>
+
+      <div class="expertise-grid">
+        <div class="expertise-card">
+          <span class="expertise-num">01</span>
+          <h3 class="expertise-title">Administration</h3>
+          <span class="expertise-sub">Governance &amp; Operations</span>
+          <p class="expertise-desc">Complete oversight of executive office workflows, corporate logistics, policy implementation, personnel support, and administrative budgeting.</p>
+        </div>
+        <div class="expertise-card">
+          <span class="expertise-num">02</span>
+          <h3 class="expertise-title">Facility Management</h3>
+          <span class="expertise-sub">Infrastructure &amp; Utilities</span>
+          <p class="expertise-desc">Preventive maintenance, space planning, plant utility monitoring, contractor management, and structural renovation supervision.</p>
+        </div>
+        <div class="expertise-card">
+          <span class="expertise-num">03</span>
+          <h3 class="expertise-title">Compliance</h3>
+          <span class="expertise-sub">Audits &amp; Life Safety</span>
+          <p class="expertise-desc">Rigorous enforcement of national labor codes, buyer standards, Fire Safety Master Trainer protocols, and OHS management.</p>
+        </div>
+        <div class="expertise-card">
+          <span class="expertise-num">04</span>
+          <h3 class="expertise-title">Local Procurement</h3>
+          <span class="expertise-sub">Sourcing &amp; Negotiations</span>
+          <p class="expertise-desc">End-to-end purchasing lifecycle: supplier qualification, RFQ evaluation, vendor bargaining, cost control, and delivery verification.</p>
+        </div>
+        <div class="expertise-card">
+          <span class="expertise-num">05</span>
+          <h3 class="expertise-title">Asset Management</h3>
+          <span class="expertise-sub">Lifecycle &amp; Inventory Audits</span>
+          <p class="expertise-desc">Systematic fixed-asset tracking, serial tagging, periodic physical stock verification, lifecycle depreciation, and disposal controls.</p>
+        </div>
+        <div class="expertise-card">
+          <span class="expertise-num">06</span>
+          <h3 class="expertise-title">Office &amp; ERP Management</h3>
+          <span class="expertise-sub">Systems &amp; Data Integrity</span>
+          <p class="expertise-desc">Hands-on execution in Oracle ERP, digital workflow entry, transactional auditing, and operational system automation.</p>
+        </div>
+        <div class="expertise-card">
+          <span class="expertise-num">07</span>
+          <h3 class="expertise-title">Graphic Design</h3>
+          <span class="expertise-sub">Visual Communication</span>
+          <p class="expertise-desc">Professional asset creation in Adobe Photoshop &amp; Illustrator: branding materials, business cards, technical signage, and presentations.</p>
+        </div>
+        <div class="expertise-card">
+          <span class="expertise-num">08</span>
+          <h3 class="expertise-title">Reporting &amp; Documentation</h3>
+          <span class="expertise-sub">Executive Intelligence</span>
+          <p class="expertise-desc">Preparation of audit-ready compliance dossiers, monthly operational variance reports, SOP manuals, and management summaries.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical & Creative Skills -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-kicker">Technical Capabilities</div>
+        <h2 class="section-title">Technical &amp; Creative Skills</h2>
+        <p class="section-lead">Validated tools, office suites, enterprise ERP solutions, and creative design platforms based strictly on verified records.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category-card">
+          <h3 class="skill-cat-title">DESIGN &amp; CREATIVE COLLATERAL</h3>
+          <div class="skill-tags">
+            <span class="skill-tag"><span class="skill-dot"></span> Adobe Photoshop</span>
+            <span class="skill-tag"><span class="skill-dot"></span> Adobe Illustrator</span>
+            <span class="skill-tag"><span class="skill-dot"></span> Graphic Design</span>
+            <span class="skill-tag"><span class="skill-dot"></span> Logo Design</span>
+            <span class="skill-tag"><span class="skill-dot"></span> Business Card Design</span>
+          </div>
+        </div>
+
+        <div class="skill-category-card">
+          <h3 class="skill-cat-title">OFFICE &amp; PRODUCTIVITY SUITE</h3>
+          <div class="skill-tags">
+            <span class="skill-tag"><span class="skill-dot"></span> MS Word</span>
+            <span class="skill-tag"><span class="skill-dot"></span> MS Excel</span>
+            <span class="skill-tag"><span class="skill-dot"></span> MS PowerPoint</span>
+            <span class="skill-tag"><span class="skill-dot"></span> Microsoft Project</span>
+          </div>
+        </div>
+
+        <div class="skill-category-card">
+          <h3 class="skill-cat-title">IT, ERP &amp; DATA MANAGEMENT</h3>
+          <div class="skill-tags">
+            <span class="skill-tag"><span class="skill-dot"></span> Oracle ERP</span>
+            <span class="skill-tag"><span class="skill-dot"></span> Data Entry</span>
+            <span class="skill-tag"><span class="skill-dot"></span> Web Browsing</span>
+            <span class="skill-tag"><span class="skill-dot"></span> Windows Explorer</span>
+          </div>
+        </div>
+
+        <div class="skill-category-card">
+          <h3 class="skill-cat-title">MEDIA &amp; CONTENT CREATIVE</h3>
+          <div class="skill-tags">
+            <span class="skill-tag"><span class="skill-dot"></span> Photography</span>
+            <span class="skill-tag"><span class="skill-dot"></span> Video Editing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-kicker">Academic Background</div>
+        <h2 class="section-title">Education</h2>
+        <p class="section-lead">Formal technical degrees and academic milestones verified from institutional documentation.</p>
+      </div>
+
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div>
+            <span class="edu-year">2022</span>
+            <h3 class="edu-degree">BSc in Computer Science Engineering</h3>
+            <p class="edu-inst">Pundra University of Science and Technology</p>
+            <p style="font-size: 0.75rem; font-weight: 700; color: #059669; margin-top: 0.375rem; font-family: monospace;">GPA: 3.19 / 4.00</p>
+          </div>
+        </div>
+
+        <div class="edu-card">
+          <div>
+            <span class="edu-year">2016</span>
+            <h3 class="edu-degree">Diploma in Computer Science Engineering</h3>
+            <p class="edu-inst">Palashbari Polytechnic Institute</p>
+            <p style="font-size: 0.75rem; font-weight: 700; color: #059669; margin-top: 0.375rem; font-family: monospace;">GPA: 3.16 / 4.00</p>
+          </div>
+        </div>
+
+        <div class="edu-card">
+          <div>
+            <span class="edu-year">2012</span>
+            <h3 class="edu-degree">Secondary School Certificate (SSC)</h3>
+            <p class="edu-inst">Faridpur BL High School</p>
+            <p style="font-size: 0.75rem; font-weight: 700; color: #059669; margin-top: 0.375rem; font-family: monospace;">GPA: 4.50 / 5.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Training & Professional Development -->
+  <section id="training" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-kicker">Certifications &amp; Courses</div>
+        <h2 class="section-title">Professional Development</h2>
+        <p class="section-lead">Specialized industrial, compliance, safety, and managerial certifications acquired from authorized bodies.</p>
+      </div>
+
+      <div class="training-filter-bar">
+        <button class="filter-btn active" data-filter="All">All</button>
+        <button class="filter-btn" data-filter="Fire Safety">Fire Safety</button>
+        <button class="filter-btn" data-filter="Compliance">Compliance</button>
+        <button class="filter-btn" data-filter="Communication">Communication</button>
+        <button class="filter-btn" data-filter="Corporate Skills">Corporate Skills</button>
+        <button class="filter-btn" data-filter="Creative Skills">Creative Skills</button>
+        <button class="filter-btn" data-filter="Industrial Training">Industrial Training</button>
+      </div>
+
+      <div class="training-grid">
+        <div class="training-card" data-category="Fire Safety">
+          <div>
+            <span class="training-cat">Fire Safety</span>
+            <h3 class="training-title">Fire Safety &amp; Emergency Evacuation Training</h3>
+            <p class="training-inst">Fire Service and Civil Defence (FSCD)</p>
+          </div>
+        </div>
+
+        <div class="training-card" data-category="Compliance">
+          <div>
+            <span class="training-cat">Compliance</span>
+            <h3 class="training-title">Social Compliance &amp; Fire Safety Master Trainer</h3>
+            <p class="training-inst">BRAC</p>
+          </div>
+        </div>
+
+        <div class="training-card" data-category="Communication">
+          <div>
+            <span class="training-cat">Communication</span>
+            <h3 class="training-title">Professional Corporate Communication &amp; Negotiation</h3>
+            <p class="training-inst">10 Minute School</p>
+          </div>
+        </div>
+
+        <div class="training-card" data-category="Corporate Skills">
+          <div>
+            <span class="training-cat">Corporate Skills</span>
+            <h3 class="training-title">Office Administration &amp; Executive Workflow Leadership</h3>
+            <p class="training-inst">10 Minute School</p>
+          </div>
+        </div>
+
+        <div class="training-card" data-category="Creative Skills">
+          <div>
+            <span class="training-cat">Creative Skills</span>
+            <h3 class="training-title">Advanced Graphic Design &amp; Digital Collateral</h3>
+            <p class="training-inst">Professional Design Institute</p>
+          </div>
+        </div>
+
+        <div class="training-card" data-category="Industrial Training">
+          <div>
+            <span class="training-cat">Industrial Training</span>
+            <h3 class="training-title">Industrial Automation &amp; Engineering Attachment</h3>
+            <p class="training-inst">Polytechnic Industrial Attachment Program</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Selected Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-kicker">Verified Technical Initiatives</div>
+        <h2 class="section-title">Selected Projects</h2>
+        <p class="section-lead">Documented engineering and operational tools developed from verified field work and safety handbooks.</p>
+      </div>
+
+      <div class="project-card">
+        <div>
+          <span style="font-size: 0.75rem; font-weight: 800; color: #b45309; text-transform: uppercase;">Safety Knowledge Digitalization</span>
+          <h3 style="font-size: 2rem; font-weight: 800; margin-top: 0.25rem;">FIRE APP</h3>
+          <p style="font-size: 0.9375rem; color: #059669; font-weight: 600; margin-bottom: 1rem;">Fire Safety Reference &amp; Compliance Knowledge Application</p>
+          <p style="font-size: 0.9375rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem;">
+            An application created from hand notes on fire safety containing answers to several fire-safety-related questions. Designed as a structured reference utility to support floor supervisors, factory safety officers, and ERT members during compliance audits and training sessions.
+          </p>
+
+          <ul class="bullet-list" style="margin-bottom: 1.5rem;">
+            <li>Built systematically from personal operational field hand-notes on factory fire safety.</li>
+            <li>Contains practical answers to critical fire prevention and emergency questions.</li>
+            <li>Supports compliance readiness and worker evacuation training.</li>
+          </ul>
+
+          <div style="font-size: 0.75rem; color: var(--text-muted);">
+            Scope: Safety Protocols · Knowledge Architecture · SOPs
+          </div>
+        </div>
+
+        <!-- Abstract Project Illustration -->
+        <div class="project-diagram">
+          <div style="font-size: 0.75rem; font-weight: 800; text-transform: uppercase; color: var(--text-muted); border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
+            Knowledge Node Architecture
+          </div>
+          <div class="diagram-item">
+            <span style="font-size: 1.25rem;">📝</span>
+            <div>
+              <strong style="font-size: 0.8125rem;">Safety Question Repository</strong>
+              <div style="font-size: 0.6875rem; color: var(--text-muted);">Hand notes on hazard classification</div>
+            </div>
+          </div>
+          <div class="diagram-item">
+            <span style="font-size: 1.25rem;">🚒</span>
+            <div>
+              <strong style="font-size: 0.8125rem;">Evacuation &amp; Drill Procedures</strong>
+              <div style="font-size: 0.6875rem; color: var(--text-muted);">FSCD protocol integration</div>
+            </div>
+          </div>
+          <div class="diagram-item">
+            <span style="font-size: 1.25rem;">📋</span>
+            <div>
+              <strong style="font-size: 0.8125rem;">Equipment Checklists</strong>
+              <div style="font-size: 0.6875rem; color: var(--text-muted);">Extinguishers &amp; alarm testing logs</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-kicker">Verified Honors</div>
+        <h2 class="section-title">Achievements &amp; Recognition</h2>
+        <p class="section-lead">Professional accolades, state government digital recognitions, and certified master trainer appointments.</p>
+      </div>
+
+      <div class="expertise-grid">
+        <div class="expertise-card">
+          <span class="expertise-sub">Fire Service &amp; Civil Defence</span>
+          <h3 class="expertise-title">FSCD Training Certificate</h3>
+          <p class="expertise-desc">Certified in fire safety protocols, rescue drills, and civil defence emergency procedures.</p>
+        </div>
+        <div class="expertise-card">
+          <span class="expertise-sub">BRAC</span>
+          <h3 class="expertise-title">Social Compliance Master Trainer</h3>
+          <p class="expertise-desc">Officially appointed Master Trainer in factory social compliance, worker welfare, and workplace safety.</p>
+        </div>
+        <div class="expertise-card">
+          <span class="expertise-sub">Government Initiative</span>
+          <h3 class="expertise-title">Digital Innovation Fair Certificate</h3>
+          <p class="expertise-desc">Awarded honor certificate recognizing technical engineering contributions and digital initiatives.</p>
+        </div>
+        <div class="expertise-card">
+          <span class="expertise-sub">10 Minute School</span>
+          <h3 class="expertise-title">Corporate Training Certificates</h3>
+          <p class="expertise-desc">Completed professional certifications in executive communication, administrative leadership, and office operations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-kicker">Direct Contact</div>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-lead">For professional opportunities, collaboration and career discussions.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div>
+            <div class="contact-icon">✉️</div>
+            <h3 style="font-size: 1rem; font-weight: 800; margin-bottom: 0.25rem;">Direct Email</h3>
+            <p style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.75rem;">Recruitment &amp; corporate inquiries</p>
+            <div class="js-email" style="font-family: monospace; font-size: 0.875rem; font-weight: 600;">alhelal711@gmail.com</div>
+          </div>
+          <div style="margin-top: 1.5rem; display: flex; gap: 0.5rem;">
+            <a href="mailto:alhelal711@gmail.com" class="btn-primary" style="flex: 1; justify-content: center;">Email Me</a>
+            <button id="copy-email-btn" class="btn-secondary">Copy</button>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div>
+            <div class="contact-icon">📞</div>
+            <h3 style="font-size: 1rem; font-weight: 800; margin-bottom: 0.25rem;">Direct Phone</h3>
+            <p style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.75rem;">Direct telephone inquiry</p>
+            <div class="js-phone" style="font-family: monospace; font-size: 0.875rem; font-weight: 600;">+880 171-845557</div>
+          </div>
+          <div style="margin-top: 1.5rem;">
+            <a href="tel:+880171845557" class="btn-secondary" style="width: 100%; justify-content: center;">Call Me</a>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div>
+            <div class="contact-icon">📍</div>
+            <h3 style="font-size: 1rem; font-weight: 800; margin-bottom: 0.25rem;">Location &amp; CV</h3>
+            <p style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.75rem;">Base location &amp; official document</p>
+            <div class="js-location" style="font-size: 0.875rem; font-weight: 600;">Dhaka, Bangladesh</div>
+          </div>
+          <div style="margin-top: 1.5rem;">
+            <a href="assets/cv.pdf" class="btn-primary js-cv-download" style="width: 100%; justify-content: center;">Download CV</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Private Information Protection Panel (Section 17) -->
+      <div class="privacy-panel">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <strong style="font-size: 0.875rem;">🔒 Private Information Protection System</strong>
+            <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem;">
+              Personal records (NID, Blood Group, Father's Name, Mother's Name, DOB) are kept confidential by default.
+            </p>
+          </div>
+          <button id="toggle-privacy-btn" class="btn-secondary" style="font-size: 0.75rem;">
+            Verify Protected Policy
+          </button>
+        </div>
+
+        <div id="private-info-content" style="display: none; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color); font-size: 0.8125rem;">
+          <p style="margin-bottom: 0.75rem; color: var(--text-secondary);">
+            Official personal records are provided upon formal background verification request from authorized hiring entities.
+          </p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.75rem; font-size: 0.75rem;">
+            <div style="padding: 0.5rem; background: var(--bg-surface); border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+              <span style="color: var(--text-muted); display: block;">National ID:</span>
+              <strong>Protected / On Request</strong>
+            </div>
+            <div style="padding: 0.5rem; background: var(--bg-surface); border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+              <span style="color: var(--text-muted); display: block;">Blood Group:</span>
+              <strong>Protected / On Request</strong>
+            </div>
+            <div style="padding: 0.5rem; background: var(--bg-surface); border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+              <span style="color: var(--text-muted); display: block;">Date of Birth:</span>
+              <strong>Protected / On Request</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 style="font-size: 1.125rem; font-weight: 800; color: #ffffff;">MD. AL HELAL SARKAR</h3>
+          <p style="font-size: 0.75rem; color: #34d399; margin-top: 0.25rem; margin-bottom: 1rem;">Administration &amp; Operations Professional</p>
+          <p style="font-size: 0.75rem; line-height: 1.6; max-width: 24rem;">
+            Corporate operations specialist with over 9 years of hands-on experience in administration, facility management, compliance, and procurement.
+          </p>
+        </div>
+
+        <div>
+          <h4 style="font-size: 0.75rem; font-weight: 800; color: #ffffff; text-transform: uppercase; margin-bottom: 0.75rem;">Quick Links</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.75rem;">
+            <li><a href="#about">About Profile</a></li>
+            <li><a href="#experience">Career Timeline</a></li>
+            <li><a href="#expertise">Core Expertise</a></li>
+            <li><a href="#skills">Skills Visualization</a></li>
+            <li><a href="#education">Academic Background</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="font-size: 0.75rem; font-weight: 800; color: #ffffff; text-transform: uppercase; margin-bottom: 0.75rem;">Downloads &amp; Actions</h4>
+          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <a href="assets/cv.pdf" class="btn-primary js-cv-download" style="width: fit-content;">Download CV</a>
+            <button class="btn-secondary js-print-portfolio" style="width: fit-content;">Print Portfolio</button>
+          </div>
+        </div>
+      </div>
+
+      <div style="padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; font-size: 0.75rem;">
+        <div>&copy; 2026 Md. Al Helal Sarkar. All Rights Reserved.</div>
+        <div style="color: #64748b;">Static Portfolio Architecture · Ready for GitHub Pages</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Profile Photo Live Preview Modal Utility (Section 20) -->
+  <div id="photo-modal" class="modal-overlay">
+    <div class="modal-card">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+        <h3 style="font-size: 1.125rem; font-weight: 800;">Profile Photo Live Preview</h3>
+        <button id="close-photo-modal" class="icon-btn" aria-label="Close modal">✕</button>
+      </div>
+      <p style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 1rem;">
+        Select an image from your computer to preview how it looks in the executive hero frame. Operates locally in browser memory; no files are uploaded to any server.
+      </p>
+
+      <input type="file" id="photo-file-input" accept="image/*" style="margin-bottom: 1rem; width: 100%; font-size: 0.75rem;" />
+
+      <img id="photo-modal-preview" src="" alt="Selected Preview" style="display: none; width: 100%; height: 12rem; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 1rem; border: 1px solid var(--border-color);" />
+
+      <div style="display: flex; justify-content: flex-end; gap: 0.5rem;">
+        <button id="reset-photo-preview" class="btn-secondary" style="font-size: 0.75rem;">Reset Default</button>
+        <button id="apply-photo-preview" class="btn-primary" style="font-size: 0.75rem;" disabled>Apply Preview</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
