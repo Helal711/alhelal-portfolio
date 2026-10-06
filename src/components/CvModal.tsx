@@ -122,7 +122,7 @@ export const CvModal: React.FC<CvModalProps> = ({ isOpen, onClose, onPrint }) =>
                   <span className="text-slate-500 font-normal text-xs">(7 Oct 2023 - Continuing)</span>
                 </div>
                 <div className="text-emerald-600 dark:text-emerald-400 font-bold text-xs mb-3">
-                  Senior Officer – Administration
+                  Senior Officer – Administration &amp; Procurement
                 </div>
                 <ul className="space-y-2 text-xs text-slate-600 dark:text-slate-300">
                   <li><strong>&gt; Facilities &amp; Technical Maintenance:</strong> Direct comprehensive facility operations, ensuring high standards in daily housekeeping and gardening/landscaping. Oversee a diverse technical team responsible for electrical systems, AC maintenance, carpentry, masonry, plumbing, welding, and painting repairs to maintain a safe, highly functional work environment.</li>
