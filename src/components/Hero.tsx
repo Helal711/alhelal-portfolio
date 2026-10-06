@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { SITE_CONFIG } from '../config';
-import { Download, ArrowRight, Mail, Camera, CheckCircle2, ShieldCheck } from 'lucide-react';
+import { Download, ArrowRight, Mail, CheckCircle2, ShieldCheck } from 'lucide-react';
 
 interface HeroProps {
   onOpenPhotoPreview: () => void;
@@ -149,18 +149,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenPhotoPreview, customPhotoUrl }
                   <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
                   <span className="text-[11px] font-semibold text-slate-200">Active</span>
                 </div>
-              </div>
-
-              {/* Local Photo Preview Tool Trigger Button */}
-              <div className="mt-4 flex items-center justify-center">
-                <button
-                  onClick={onOpenPhotoPreview}
-                  className="inline-flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors py-1 px-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800"
-                  title="Preview a different photo from your computer without uploading to server"
-                >
-                  <Camera className="w-3.5 h-3.5" />
-                  <span>Test Photo Preview Tool</span>
-                </button>
               </div>
 
             </div>
